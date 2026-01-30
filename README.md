@@ -280,7 +280,7 @@ AI: OpenAI (optional)
 
 ---
 
-## PROJECT PURPOSE
+
 
 Demonstrate how AI + location data can accelerate real estate sales presentations.
 
@@ -292,4 +292,12 @@ Demonstrate how AI + location data can accelerate real estate sales presentation
 GeoPitch AI
 From Plot to Pitch
 
+## Pictures
+
+<img width="1913" height="941" alt="Screenshot 2026-01-31 050405" src="https://github.com/user-attachments/assets/fd0de472-2f54-457a-a1ca-c16ca4271bd1" />
+<img width="1882" height="940" alt="Screenshot 2026-01-31 050428" src="https://github.com/user-attachments/assets/813b6e44-bf11-40ca-a8a4-358df6797215" />
+<img width="1731" height="926" alt="Screenshot 2026-01-31 050455" src="https://github.com/user-attachments/assets/edf8913d-5de0-43fb-886d-b19afc67bfb8" />
+<img width="580" height="821" alt="Screenshot 2026-01-31 050551" src="https://github.com/user-attachments/assets/8653692e-7eb2-4c2a-a54b-e859ddf806c0" />
+VIDEO :
+[vid.zip](https://github.com/user-attachments/files/24975684/vid.zip)
 
