@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body{
+font-family:Arial;
+padding:30px;
+background:#fafafa
+}
+
+h1{color:#0047ff}
+
+.card{
+background:white;
+padding:15px;
+border-radius:12px;
+margin-bottom:15px
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px
+}
+
+img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px
+}
+
+.badge{
+background:#eef1ff;
+padding:6px 10px;
+border-radius:20px;
+margin-right:10px;
+font-size:13px
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>GeoPitch AI Property Pitch</h1>
+<p>{{ location }} ({{ lat }}, {{ lon }})</p>
+
+<div class="card">
+<h3>AI Summary</h3>
+<p>{{ summary }}</p>
+</div>
+
+<div class="card">
+<h3>Amenities Nearby</h3>
+<span class="badge">Hospital {{ amenities["Hospital"] }}</span>
+<span class="badge">School {{ amenities["School"] }}</span>
+<span class="badge">Airport {{ amenities["Airport"] }}</span>
+</div>
+
+<div class="card">
+<h3>Selling Points</h3>
+<ul>
+{% for s in selling_points %}
+<li>{{ s }}</li>
+{% endfor %}
+</ul>
+</div>
+
+<div class="grid">
+
+<div class="card"><b>Type</b><br>{{ ptype }}</div>
+<div class="card"><b>Area</b><br>{{ area }} sqft</div>
+<div class="card"><b>Value</b><br>₹{{ value }}</div>
+<div class="card"><b>Rent</b><br>₹{{ rent }}</div>
+
+</div>
+
+<div class="card">
+<h3>Property Gallery</h3>
+
+<div class="grid">
+{% for img in images %}
+<img src="{{ img }}">
+{% endfor %}
+</div>
+
+</div>
+
+<div class="card">
+<h3>Next Steps</h3>
+📞 Contact Agent &nbsp;&nbsp; 📍 Visit Location &nbsp;&nbsp; 📄 Share Pitch
+</div>
+
+</body>
+</html>
